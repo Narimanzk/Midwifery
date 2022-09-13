@@ -32,3 +32,49 @@ The system should also keep track of the basic contact information of the health
   <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
   <img alt="Relational Model of The Midwifery Application" src="/project_er.jpg">
 </picture>
+
+## Relational Translation
+Technicians(**techid**,name,pnum)
+Tests(**tid**,labdate,sampdate,prescdate,type,results,techid,appid,pracid)
+tid: Artificial key
+techid references Technicians
+appid references Appointments
+pracid references Midwives
+Inclusion(**tid**,appid,pracid)
+tid references Tests
+appid references Appointments
+pracid references Midwives
+Appointments(**appid**,date,time,pracid,cid,pregnum)
+appid: Artificial key
+pracid references Midwives
+(cid,pregnum) references Couples (cid,pregnum)
+Notes(**nid**,date,time,body,appid,pracid)
+nid: Artificial key
+appid references Appointments
+pracid references Midwives
+Midwives(**pracid**,name,pnum,email,instEmail)
+instEmail references Institutions
+pid: Artificial key
+Institutions(**email**,website,name,pnum,address)
+CommunityClinic(**email**)
+BirthCenter(**email**)
+Couples(**cid**,**pregNum**,agreedDue,estdue,primary,backup)
+cid: Artificial key
+Primary references Midwives
+Backup references midwives
+InfoSessions(**sid**,date,language,time,pracid)
+pracid references Midwives
+Invite(**cid**,**pregnum**,**instEmail**,**sid**)
+(cid,pregnum) references Couples (cid,pregnum)
+instEmail references Institutions
+sid references InfoSessions
+Father(**hcardid**,**cid**,**pregnum**)
+hcardid references Parents
+(cid,pregnum) references Couples (cid,pregnum)
+Mother(**hcardid**,**cid**,**pregnum**,lastperiod)
+hcardid references Parents
+(cid,pregnum) references Couples (cid,pregnum)
+Parents(**hcardid**,name,bdate,address,pnum,bloodtype,profession,email)
+Children(**childid**,gender,bloodtype,bdate,btime,homebirth,instEmail,cid,pregnum)
+insEmail references BirthCenter
+(cid,pregnum) references Couples (cid,pregnum)
