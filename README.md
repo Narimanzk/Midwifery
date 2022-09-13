@@ -96,21 +96,34 @@ Children(**childid**,gender,bloodtype,bdate,btime,homebirth,instEmail,cid,pregnu
 
 ## Database Interaction
 list all the appointments for the midwife Marion Girard for the week March 21 - March 25 of this year (2022). <br/>
-![alt text](/interaction1.png) <br/>
+![alt text](https://github.com/Narimanzk/Midwifery/blob/main/Interaction1.png) <br/>
 
 list the results of all the blood iron tests that was performed on (Mother)
 Victoria Gutierrez for her second pregnancy. <br/>
-![alt text](http://url/to/img.png) <br/>
+![alt text](https://github.com/Narimanzk/Midwifery/blob/main/Interaction2.png) <br/>
 
 list the names of each birthing center/community clinic as well as the number
 of pregnancies that are due for the month of July this year (2022). <br/>
-![alt text](http://url/to/img.png) <br/>
+![alt text](https://github.com/Narimanzk/Midwifery/blob/main/Interaction3.png) <br/>
 
 list the health care card, name and phone number of the mothers who is
 currently pregnant and have not yet given birth and is under the care of a midwife employed by Lac-
 Saint-Louis. <br/>
-![alt text](http://url/to/img.png) <br/>
+![alt text](https://github.com/Narimanzk/Midwifery/blob/main/Interaction4.png) <br/>
 
 ist the health care card, name of mothers who have had more than one baby
 in a single pregnancy. <br/>
-![alt text](http://url/to/img.png) <br/>
+![alt text](https://github.com/Narimanzk/Midwifery/blob/main/Interaction5.png) <br/>
+
+## Java Application Interaction
+![image](https://user-images.githubusercontent.com/45717658/190016439-20494b10-9355-4b73-9a25-8c3e00ca45a0.png)  <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016522-56ed9c5c-60d9-4085-ac0e-ac01ba18be47.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016534-057044b4-40ea-44eb-bd37-37c487070b56.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016557-e7481a0c-bd1f-4541-97bf-23c5b1a91c12.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016574-3e17cc2c-9579-450e-8230-e421cd985ae0.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016602-09605edd-b213-4b05-91bd-cc4a13d656be.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016625-cf508a81-754f-494b-a89c-98e78aad7282.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016646-9cd7f55f-3e26-496d-9227-a153e5758df9.png) <br/>
+![image](https://user-images.githubusercontent.com/45717658/190016663-18d37cc1-bb73-4ec7-970f-ab52f03cac67.png) <br/>
+
+
