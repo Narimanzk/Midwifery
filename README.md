@@ -25,3 +25,10 @@ Midway through the pregnancy, a "backup" midwife is also assigned, who can take 
 
   The system should be able to  figure out to which pregnancy/individual a note, test, etc., applies.
 The system should also keep track of the basic contact information of the healthcare institutions such as name, phone number, email, address and optionally their website.
+
+## Relational Model
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/project_er.jpg">
+  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+  <img alt="Relational Model of The Midwifery Application" src="/project_er.jpg">
+</picture>
