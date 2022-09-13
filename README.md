@@ -93,3 +93,24 @@ Parents(**hcardid**,name,bdate,address,pnum,bloodtype,profession,email)
 Children(**childid**,gender,bloodtype,bdate,btime,homebirth,instEmail,cid,pregnum)
 <br/> insEmail references BirthCenter
 <br/> (cid,pregnum) references Couples (cid,pregnum)
+
+## Database Interaction
+list all the appointments for the midwife Marion Girard for the week March 21 - March 25 of this year (2022). <br/>
+![alt text](/interaction1.png) <br/>
+
+list the results of all the blood iron tests that was performed on (Mother)
+Victoria Gutierrez for her second pregnancy. <br/>
+![alt text](http://url/to/img.png) <br/>
+
+list the names of each birthing center/community clinic as well as the number
+of pregnancies that are due for the month of July this year (2022). <br/>
+![alt text](http://url/to/img.png) <br/>
+
+list the health care card, name and phone number of the mothers who is
+currently pregnant and have not yet given birth and is under the care of a midwife employed by Lac-
+Saint-Louis. <br/>
+![alt text](http://url/to/img.png) <br/>
+
+ist the health care card, name of mothers who have had more than one baby
+in a single pregnancy. <br/>
+![alt text](http://url/to/img.png) <br/>
