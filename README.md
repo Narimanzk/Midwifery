@@ -35,46 +35,61 @@ The system should also keep track of the basic contact information of the health
 
 ## Relational Translation
 Technicians(**techid**,name,pnum)
+
 Tests(**tid**,labdate,sampdate,prescdate,type,results,techid,appid,pracid)
-tid: Artificial key
-techid references Technicians
-appid references Appointments
-pracid references Midwives
+<br/> tid: Artificial key
+<br/> techid references Technicians
+<br/> appid references Appointments
+<br/> pracid references Midwives
+
 Inclusion(**tid**,appid,pracid)
-tid references Tests
-appid references Appointments
-pracid references Midwives
+<br/> tid references Tests
+<br/> appid references Appointments
+<br/> pracid references Midwives
+
 Appointments(**appid**,date,time,pracid,cid,pregnum)
-appid: Artificial key
-pracid references Midwives
-(cid,pregnum) references Couples (cid,pregnum)
+<br/> appid: Artificial key
+<br/> pracid references Midwives
+<br/> (cid,pregnum) references Couples (cid,pregnum)
+
 Notes(**nid**,date,time,body,appid,pracid)
-nid: Artificial key
-appid references Appointments
-pracid references Midwives
+<br/> nid: Artificial key
+<br/> appid references Appointments
+<br/> pracid references Midwives
+
 Midwives(**pracid**,name,pnum,email,instEmail)
-instEmail references Institutions
-pid: Artificial key
+<br/> instEmail references Institutions
+<br/> pid: Artificial key
+
 Institutions(**email**,website,name,pnum,address)
+
 CommunityClinic(**email**)
+
 BirthCenter(**email**)
+
 Couples(**cid**,**pregNum**,agreedDue,estdue,primary,backup)
-cid: Artificial key
-Primary references Midwives
-Backup references midwives
+<br/> cid: Artificial key
+<br/> Primary references Midwives
+<br/> Backup references midwives
+
 InfoSessions(**sid**,date,language,time,pracid)
-pracid references Midwives
+<br/> pracid references Midwives
+
 Invite(**cid**,**pregnum**,**instEmail**,**sid**)
-(cid,pregnum) references Couples (cid,pregnum)
-instEmail references Institutions
-sid references InfoSessions
+<br/> (cid,pregnum) references Couples (cid,pregnum)
+<br/> instEmail references Institutions
+<br/> sid references InfoSessions
+
 Father(**hcardid**,**cid**,**pregnum**)
-hcardid references Parents
-(cid,pregnum) references Couples (cid,pregnum)
+<br/> hcardid references Parents
+<br/> (cid,pregnum) references Couples (cid,pregnum)
+
 Mother(**hcardid**,**cid**,**pregnum**,lastperiod)
-hcardid references Parents
-(cid,pregnum) references Couples (cid,pregnum)
+<br/> hcardid references Parents
+<br/> (cid,pregnum) references Couples (cid,pregnum)
+
 Parents(**hcardid**,name,bdate,address,pnum,bloodtype,profession,email)
+
 Children(**childid**,gender,bloodtype,bdate,btime,homebirth,instEmail,cid,pregnum)
-insEmail references BirthCenter
-(cid,pregnum) references Couples (cid,pregnum)
+<br/> insEmail references BirthCenter
+<br/> (cid,pregnum) references Couples (cid,pregnum)
